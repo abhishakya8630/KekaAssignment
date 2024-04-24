@@ -1,0 +1,92 @@
+{
+    "status": "OK",
+    "copyright": "Copyright (c) 2024 The New York Times Company. All Rights Reserved.",
+    "response": {
+        "docs": [
+            {
+                "abstract": 121,
+                "web_url": "https://www.nytimes.com/2024/04/11/us/politics/democrats-trump-save-democracy.html",
+                "snippet": "In two races in Maryland and Virginia, candidates are turning political fame into campaigns, and a Pennsylvania race is focused on a congressmanâ€™s role in Trumpâ€™s efforts to overturn his 2020 loss.",
+                "lead_paragraph": "Harry Dunn, a former Capitol Police officer whose pitched battles with former President Donald J. Trumpâ€™s supporters on and after Jan. 6, 2021, vaulted him to political stardom, was greeted Tuesday evening in Annapolis, Md., like a celebrity.",
+                "print_section": "A",
+                "print_page": "1",
+                "source": "The New York Times",
+                " ": [
+                    {
+                        "rank": 0,
+                        "subtype": "xlarge",
+                        "caption": null,
+                        "credit": null,
+                        "type": "image",
+                        "url": "images/2024/04/10/us/politics/00pol-house-democracy1/00pol-house-democracy1-articleLarge.jpg",
+                        "height": 400,
+                        "width": 600,
+                        "legacy": {
+                            "xlarge": "images/2024/04/10/us/politics/00pol-house-democracy1/00pol-house-democracy1-articleLarge.jpg",
+                            "xlargewidth": 600,
+                            "xlargeheight": 400
+                        },
+                        "subType": "xlarge",
+                        "crop_name": "articleLarge"
+                    },
+                    {
+                        "rank": 0,
+                        "subtype": "popup",
+                        "caption": null,
+                        "credit": null,
+                        "type": "image",
+                        "url": "images/2024/04/10/us/politics/00pol-house-democracy1/00pol-house-democracy1-popup.jpg",
+                        "height": 433,
+                        "width": 650,
+                        "legacy": {},
+                        "subType": "popup",
+                        "crop_name": "popup"
+                    },
+                    {
+                        "rank": 0,
+                        "subtype": "blog480",
+                        "caption": null,
+                        "credit": null,
+                        "type": "image",
+                        "url": "images/2024/04/10/us/politics/00pol-house-democracy1/00pol-house-democracy1-blog480.jpg",
+                        "height": 320,
+                        "width": 480,
+                        "legacy": {},
+                        "subType": "blog480",
+                        "crop_name": "blog480"
+                    }
+                ],
+                "pub_date": "2024-04-11T09:06:26+0000",
+                "document_type": "article",
+                "news_desk": "Politics",
+                "section_name": "U.S.",
+                "subsection_name": "Politics",
+                "byline": {
+                    "original": "By Jonathan Weisman",
+                    "person": [
+                        {
+                            "firstname": "Jonathan",
+                            "middlename": null,
+                            "lastname": "Weisman",
+                            "qualifier": null,
+                            "title": null,
+                            "role": "reported",
+                            "organization": "",
+                            "rank": 1
+                        }
+                    ],
+                    "organization": null
+                },
+                "type_of_material": "News",
+                "_id": "nyt://article/e9d40be9-7775-53ee-a9ce-d38685f65bc4",
+                "word_count": 1338,
+                "uri": "nyt://article/e9d40be9-7775-53ee-a9ce-d38685f65bc4"
+            }
+        ],
+        "meta": {
+            "hits": 937533,
+            "offset": 0,
+            "time": 124
+        }
+    }
+}

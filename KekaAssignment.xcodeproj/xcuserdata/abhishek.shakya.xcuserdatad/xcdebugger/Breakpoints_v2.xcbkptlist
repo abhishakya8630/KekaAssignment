@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C878ECDA-55F8-4CBE-A8AC-4393710DB984"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E70D53E9-6B7D-4077-91B3-F1381C7BD20F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KekaAssignmentTests/KekaAssignmentTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "fetchArticles(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E70D53E9-6B7D-4077-91B3-F1381C7BD20F - 162af8a12e2ec5dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KekaAssignmentTests.ArticleRepository.fetchArticles(completion: (Swift.Result&lt;Swift.Optional&lt;KekaAssignment.NYTAPIResponse&gt;, KekaAssignment.GenericError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "KekaAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishek.shakya/Documents/KekaAssignment/KekaAssignmentTests/KekaAssignmentTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "512">
+               </Location>
+               <Location
+                  uuid = "E70D53E9-6B7D-4077-91B3-F1381C7BD20F - 162af8a12e2ec5dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "KekaAssignmentTests.ArticleRepository.fetchArticles(completion: (Swift.Result&lt;Swift.Optional&lt;KekaAssignment.NYTAPIResponse&gt;, KekaAssignment.GenericError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "KekaAssignmentTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhishek.shakya/Documents/KekaAssignment/KekaAssignmentTests/KekaAssignmentTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "520">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8089E68E-A606-4694-8D6E-702C85A588F3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "KekaAssignmentTests/KekaAssignmentTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "fetchArticles(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

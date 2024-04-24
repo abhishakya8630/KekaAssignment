@@ -8,29 +8,59 @@
 import XCTest
 @testable import KekaAssignment
 
-final class KekaAssignmentTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+final class CryptoCoinsViewModelTests: XCTestCase {
+    var viewModel: ArticalDetailsViewModel!
+    var mockRepository: ArticleRepository!
+    
+    override func setUp() {
+        super.setUp()
+        mockRepository = ArticleRepository()
+        viewModel = ArticalDetailsViewModel(articleRepo: mockRepository)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    override func tearDown() {
+        viewModel = nil
+        mockRepository = nil
+        viewModel = nil
+        super.tearDown()
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    func testLoadDataSuccessfully() {
+        viewModel.getArticleData()
+        XCTAssertEqual(viewModel.getTotalNumberOfListData(), 1)
     }
+    
+    func testLoadDataFailure() {
+        mockRepository.jsonFileName = "ArticleFailureData"
+        viewModel.getArticleData()
+        XCTAssertEqual(viewModel.getTotalNumberOfListData(), 0)
+    }
+}
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+class ArticleRepository: ArticleRepositoryProtocol {
+    var jsonFileName: String = "ArticleData"
+    func fetchArticles(completion: @escaping (Result<NYTAPIResponse?, GenericError>) -> Void) {
+        guard let jsonData = fetchJsonFrom(jsonFileName: jsonFileName) else {
+            completion(.failure(.emptyJsonData))
+            return
+        }
+        let jsonDecoder = JSONDecoder()
+        do {
+            let decodedData = try jsonDecoder.decode(NYTAPIResponse.self, from: jsonData)
+            completion(.success(decodedData))
+        } catch(let error) {
+            completion(.failure(.customError(reason: error.localizedDescription)))
         }
     }
-
+    
+    // Assuming this function is correctly placed in this mock or another utility class
+    fileprivate func fetchJsonFrom(jsonFileName: String) -> Data? {
+        if let path =  Bundle(for: type(of: self)).path(forResource: jsonFileName, ofType: "json") {
+            if let data = try? Data(contentsOf: URL(fileURLWithPath: path)) {
+                return data
+            }
+        }
+        return nil
+    }
 }
+
